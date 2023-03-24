@@ -15,6 +15,7 @@ public class TC_VT_001_Test extends Base_Test {
 	public void toClickOnOrganizationPage()
 	{
 		Organization_Page org=new Organization_Page(driver);
+		//To click organization Button
 		org.getOrganizationsLink().click();
 		String expectedOrganizationPageTitle="Administrator - Organizations - vtiger CRM 5 - Commercial Open Source CRM";
 		Assert.assertEquals(driver.getTitle(), expectedOrganizationPageTitle, "Organization page is not displayed");

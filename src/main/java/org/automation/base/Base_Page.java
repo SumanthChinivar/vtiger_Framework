@@ -138,6 +138,41 @@ public abstract class Base_Page {
 	@FindBy(xpath = "//img[@title='Open Calculator...']")
 	private WebElement calculatorIcon;
 	
+	@FindBy(xpath = "//input[@name='query_string']")
+	private WebElement searchTextField;
+	
+	@FindBy(xpath = "//img[contains(@src,'arrow_down')]")
+	private WebElement downArrow;
+	
+	@FindBy(xpath="//input[@alt='Find']")
+	private WebElement findButton;
+	
+	@FindBy(linkText = "Select All")
+	private WebElement selectAllButton;
+	
+	@FindBy(linkText = "UnSelect All")
+	private WebElement unselectAllButton;
+	
+	public WebElement getSelectAllButton() {
+		return selectAllButton;
+	}
+
+	public WebElement getUnselectAllButton() {
+		return unselectAllButton;
+	}
+
+	public WebElement getSearchTextField() {
+		return searchTextField;
+	}
+
+	public WebElement getDownArrow() {
+		return downArrow;
+	}
+
+	public WebElement getFindButton() {
+		return findButton;
+	}
+
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -374,4 +409,12 @@ public abstract class Base_Page {
 	
 	@FindBy(linkText = "CRM Settings")
 	private WebElement CRMSettingsLink;	
+	
+	@FindBy(xpath = "//a[contains(@onclick,'UnifiedSearch_SelectModuleCancel')]")
+	private WebElement closeSearchButton;
+
+	public WebElement getCloseSearchButton() {
+		return closeSearchButton;
+	}
+	
 }

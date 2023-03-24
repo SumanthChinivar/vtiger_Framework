@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="troubleTickets.TC_VT_001_Test">
+      <class name="organization.TC_VT_009_Test">
         <methods>
           <include name="browserSetUp"/>
           <include name="logoutOfApplication"/>
           <include name="browserTearDown"/>
-          <include name="toOpenTroubleTicketsPage"/>
+          <include name="closeSearch"/>
           <include name="loginToApplication"/>
         </methods>
-      </class> <!-- troubleTickets.TC_VT_001_Test -->
+      </class> <!-- organization.TC_VT_009_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

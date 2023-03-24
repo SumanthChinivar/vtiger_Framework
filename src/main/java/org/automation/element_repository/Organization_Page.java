@@ -208,6 +208,21 @@ public class Organization_Page extends Base_Page {
 	public WebElement getAssignedToButton() {
 		return assignedToButton;
 	}
+	
+	@FindBy(xpath="//input[@value='New Group']")
+	private WebElement getNewGroupLink;
+	
+
+	public WebElement getGetNewGroupLink() {
+		return getNewGroupLink;
+	}
+	
+	@FindBy(id="gpcon1")
+	private WebElement getConditionDropDown;
+
+	public WebElement getGetConditionDropDown() {
+		return getConditionDropDown;
+	}
 
 	@FindBy(linkText = "Organization Name")
 	private WebElement organizationNameButton;
